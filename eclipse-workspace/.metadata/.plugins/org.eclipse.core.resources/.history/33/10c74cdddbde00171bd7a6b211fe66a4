@@ -1,0 +1,23 @@
+package Shapes;
+
+public class Runner {
+	
+	public static void main(String[] args) {
+		
+		Circle_Jeff circle = new Circle_Jeff(3);
+		
+		System.out.println(circle.getArea());
+		System.out.println(circle.getCircumference());
+		
+			
+		
+		Rectangle_Jeff rectangle = new Rectangle_Jeff(3,4);
+		
+		
+		System.out.println(rectangle.getArea());
+		System.out.println(rectangle.getParameter());	
+		
+	}
+
+}
+
