@@ -104,3 +104,20 @@ public String[] wordsFront(String[] words, int n) {
 }
 
 //Q7
+public List wordsWithoutList(String[] words, int len) {
+  
+  List result = new ArrayList();
+  
+  for (int i =0; i< words.length; i++){
+    
+    if(words[i].length()!=len){
+      
+      result.add(words[i]);
+      
+    }
+    
+  }
+  return result; 
+}
+
+//Q8
