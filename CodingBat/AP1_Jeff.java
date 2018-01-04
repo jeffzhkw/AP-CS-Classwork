@@ -121,3 +121,12 @@ public List wordsWithoutList(String[] words, int len) {
 }
 
 //Q8
+public boolean hasOne(int n) {
+    while (n > 0) {
+        if (n % 10 == 1) return true;
+        n = n / 10;
+    }
+    return false;
+}
+
+//Q9
