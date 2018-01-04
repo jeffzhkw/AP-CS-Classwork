@@ -130,3 +130,39 @@ public boolean hasOne(int n) {
 }
 
 //Q9
+public boolean dividesSelf(int n) {
+  int temp = n; 
+  while (n > 0){
+    if (n % 10 == 0){
+      
+      return false;
+      
+    }
+    
+    else 
+        if (temp % (n % 10) == 0)
+        n = n/10 ; 
+        
+        else return false;
+    
+    
+  }
+  return true;
+}
+
+//Q10
+public int[] copyEvens(int[] nums, int count) {
+    int[] result = new int[count];
+    int a = 0;
+ 
+    for (int i = 0; i < nums.length; i++) {
+        if (nums[i] % 2 == 0) {
+            result[a] = nums[i];
+            a++;
+        }
+        if (a == count) break;
+    }
+    return result;
+
+}
+//Q11
