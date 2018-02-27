@@ -1,6 +1,6 @@
 ##Introduction
  
-*Name: Jeff Zhang
+*Name: Jeff Zhang & Tony Zhong
 *Class: S3C8
 *Section Number: APCS
 *Instructor: Daniel Gunn
@@ -8,4 +8,4 @@
 ========================================
 
 *This project is aimed to simulate a route cipher encryption using object oriented method. 
-*It is an updated version of project1 since I self learned how to construct a interface with users using awt package.  
+*It is an updated version of project1 since I and learned how to construct a interface with users using awt package.  
