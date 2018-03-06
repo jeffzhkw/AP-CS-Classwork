@@ -48,3 +48,23 @@ e)	Attributes: number of sides
 Bicycle
 Attribute: Numbers of level of speed changers, weights , maximum speed
 Behavior: speed up, slow down, turn the angle
+
+
+Mar. 6th, 2018
+Define these terms 
+
+1. Inheritance
+2. Superclass
+3. Subclass
+4. extends
+5. super()
+6. What is the difference between superclass and subclass, give at least 1 example?
+7. Which is bigger? A superclass or a subclass?
+
+1. It takes methods from one class and gives to another class that it can be used
+2. A more general class.
+3. A more specific class under a superclass
+4. Extends is a way in java code to indicate that the class before "extends" is under superclass that appear after "extends"
+5. Super() is a method that takes the constructor of superclass.
+6. subclass is one category under a superclass. For example, class students is under class person. 
+7. Sub class is bigger
