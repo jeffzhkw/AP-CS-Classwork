@@ -20,4 +20,13 @@ public class CDs extends Items {
 		
 		this.genre = a; 
 	}
+	
+	public void printDetails() {
+		
+		System.out.println("Title: " + this.getTitle()+"\n"
+				+ "Artist: " + this.getAuthor_Artist()+"\n"
+				+ "ItemID: " +this.getItemID()+"\n"
+				+ "Onloan: " + this.getOnLoan()+ "\n"
+				+ "DueDate: " + this.getDueDate()); 
+	}
 }

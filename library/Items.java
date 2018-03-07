@@ -43,6 +43,7 @@ public class Items {
 		
 	}
 	
+	
 	public void borrowing() {
 		
 		this.OnLoan= true;  
@@ -64,10 +65,10 @@ public class Items {
 	
 	public static void main(String[] args) {
 		
-		Books b = new Books("12 Rules for Life", "Jordan Peterson", 123, false, new Date(), false );
+		Items b = new Books("12 Rules for Life", "Jordan Peterson", 123, false, new Date(), false );
         b.printDetails();
         
-        CDs cd = new CDs("And Justice for all", "Metallica", 567, false, new Date(), "Metal");
+        Items cd = new CDs("And Justice for all", "Metallica", 567, false, new Date(), "Metal");
         cd.printDetails();
 	}
 }

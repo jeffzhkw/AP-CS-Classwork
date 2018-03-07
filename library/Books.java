@@ -22,4 +22,13 @@ public class Books extends Items {
 		
 		this.IsRequested = true; 
 	}
+	
+	public void printDetails() {
+		
+		System.out.println("Title: " + this.getTitle()+"\n"
+				+ "Author: " + this.getAuthor_Artist()+"\n"
+				+ "ItemID: " +this.getItemID()+"\n"
+				+ "Onloan: " + this.getOnLoan()+ "\n"
+				+ "DueDate: " + this.getDueDate()); 
+	}
 }
