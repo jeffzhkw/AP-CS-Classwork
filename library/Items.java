@@ -1,6 +1,8 @@
 package library;
 
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class Items {
 	
@@ -9,6 +11,7 @@ public class Items {
 	private int ItemID; 
 	private boolean OnLoan; 
 	private Date DueDate; 
+	private int borrowerID;
 
 	
 	public Items(String a, String b, int c, boolean d, Date e) {
@@ -18,6 +21,19 @@ public class Items {
 		this.OnLoan = d;
 		this.DueDate = e;
 	}
+	
+	//helper method
+	private static Date addDays(Date d, int days) {
+		GregorianCalendar cal = new GregorianCalendar();
+		cal.setTime(d);
+		cal.add(Calendar.DATE, days);
+		
+		return cal.getTime();
+		
+		
+	}
+	
+	
 	
 	public String getTitle() {
 		
@@ -46,7 +62,9 @@ public class Items {
 	
 	public void borrowing() {
 		
-		this.OnLoan= true;  
+		this.OnLoan= true;
+		Date today = new Date();
+		this.DueDate = addDays(today, 14);
 	}
 	
 	public void returning() {
@@ -66,6 +84,8 @@ public class Items {
 	public static void main(String[] args) {
 		
 		Items b = new Books("12 Rules for Life", "Jordan Peterson", 123, false, new Date(), false );
+        b.printDetails();
+        b.borrowing();
         b.printDetails();
         
         Items cd = new CDs("And Justice for all", "Metallica", 567, false, new Date(), "Metal");
